@@ -2,9 +2,10 @@
 .header{
     /*display: grid;
     grid-template-columns: repeat(1fr, 1);*/
-    position: fixe;
-    top: 0
-    width: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 
@@ -42,7 +43,7 @@
     justify-content: space-evenly;
 }
 
-.navbar_item{
+.navbar__item{
     
 }
 
@@ -50,8 +51,13 @@
     text-decoration: none;
     color:var(--white);
     transition: color 0.3s ease;
+    font-size: var(--fx-xs);
 }
 
-.navbar_link:hover{
+.navbar__link:hover{
     color: var(--secundary-950);
+}
+
+P{
+    font-size: var(--fs-md);
 }
